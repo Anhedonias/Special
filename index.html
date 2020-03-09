@@ -6,6 +6,7 @@
 	<title>Special Barbershop</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 
@@ -13,36 +14,267 @@
 		<div class="container">
 			<div class="header-inner">
 				<div class="header__logo">
-					<a href="#"><img src="img/logo.png" alt="logo"></a>
+					<a href="#hero"><img src="img/logo.png" alt="logo"></a>
 				</div>
 				<nav class="header__nav">
-					<a href="#" class="nav__link">Главная</a>
-					<a href="#" class="nav__link">О нас</a>
-					<a href="#" class="nav__link">Услуги</a>
-					<a href="#" class="nav__link">Галерея</a>
-					<a href="#" class="nav__link">Франшиза</a>
-					<a href="#" class="nav__link">Контакты</a>
+					<a href="#hero" class="nav__link">Главная</a>
+					<a href="#about" class="nav__link">О нас</a>
+					<a href="#services" class="nav__link">Услуги</a>
+					<a href="#gallery" class="nav__link">Галерея</a>
+					<a href="#franchise" class="nav__link">Франшиза</a>
+					<a href="#contact" class="nav__link">Контакты</a>
 				</nav>
 				<div class="header__phone">
-					<a class="phone__number" href="#">+7 905 230-22-21</a>
-					<span class="callback"><a href="#">Заказать обратный звонок</a></span>
+					<a class="phone__number" href="tel:+7 905 230-22-21">+7 905 230-22-21</a>
+					<button id="callback" class="callback">Заказать обратный звонок</button>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<main class="main">
-		<section class="section hero">
+		<section class="hero" id="hero">
 			<div class="container">
 				<div class="hero-text">
 					<span class="subtitle">Barbershop</span>
 					<h1 class="title">Special</h1>
 					<p class="desc">Брутальный мужской клуб нового формата, объединяющий в себе классическую цирюльнюи атмосферное пространство для умных, успешных и уверенных в себе людей. </p>
-					<a href="#" class="btn">Записаться на стрижку</a>
+					<a href="#" id="btn" class="btn">Записаться на стрижку</a>
+				</div>
+			</div>
+		</section>
+		<section class="section about" id="about">
+			<div class="container">
+				<h2 class="section-title about__title">О нас</h2>
+				<p class="about__desc">Special Barbershop — концептуальная мужская парикмахерская в центре Санкт-Петербурга. Мы объединили в одном пространстве барбершоп в классическом английском стиле, мужское ателье и магазин косметики. Мы станем для Вас «своим местом», если Вы цените качество услуг, безупречный уровень сервиса, специалистов, которым не чужды хорошие манеры, комфортный интерьер, удобную локацию и отсутствие проблем с парковкой. Мы знаем, что время ― деньги. Именно поэтому мы стремимся наполнить особой ценностью каждую минуту Вашего пребывания в Special Barbershop.</p>
+				<div class="advantages">
+					<div class="advantage__item">
+						<div class="advantage__icon">
+							<img src="img/about/coffee.svg" alt="coffee">
+						</div>
+						<div class="advantage__desc">
+							<p>Вам обязательно предложат чашечку чая или кофе.</p>
+						</div>
+					</div>
+					<div class="advantage__item">
+						<div class="advantage__icon">
+							<img src="img/about/hardware.svg" alt="hardware">
+						</div>
+						<div class="advantage__desc">
+							<p>Профессиональное оборудование от лучших мировых производителей всегда в идеальном состоянии.</p>
+						</div>
+					</div>
+					<div class="advantage__item">
+						<div class="advantage__icon">
+							<img src="img/about/barber.svg" alt="barber">
+						</div>
+						<div class="advantage__desc">
+							<p>Наши барберы стремятся к совершенству, участвуя во всех возможных мастер-классах и семинарах.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section services" id="services">
+			<div class="container">
+				<h2 class="section-title services__title">Услуги</h2>
+				<div class="services-block">
+					<div class="service__item">
+						<div class="service__icon">
+							<img src="img/services/razor.svg" alt="razor-icon">
+						</div>
+						<div class="service__image">
+							<div class="service__text">
+								<spam class="service__subtitle">Стрижки</spam>
+								<div class="service__desc">
+									<div class="service__title">
+										<span class="service__name">Стрижка мужская</span>
+										<span class="service__name">Стрижка FADE</span>
+										<span class="service__name">Стрижка машинкой</span>
+										<span class="service__name">Стрижка детская</span>
+										<span class="service__name">Окантовка</span>
+									</div>
+									<div class="service__price">
+										<span class="price">1800</span>
+										<span class="price">1500</span>
+										<span class="price">1000</span>
+										<span class="price">1200</span>
+										<span class="price">1000</span>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="service__button">Записаться на стрижку</a>
+							<div class="service__image">
+								<img src="img/services/razor-img.jpg" alt="razor">
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__icon">
+							<img src="img/services/blade.svg" alt="blade-icon">
+						</div>
+						<div class="service__image">
+							<div class="service__text">
+								<spam class="service__subtitle">Бритье</spam>
+								<div class="service__desc">
+									<div class="service__title">
+										<span class="service__name">Моделирование бороды</span>
+										<span class="service__name">Королевское бритье</span>
+										<span class="service__name">Бритье головы</span>
+									</div>
+									<div class="service__price">
+										<span class="price">1300</span>
+										<span class="price">1500</span>
+										<span class="price">1500</span>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="service__button">Записаться на стрижку</a>
+							<div class="service__image">
+								<img src="img/services/blade-img.jpg" alt="blade">
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__icon">
+							<img src="img/services/other.svg" alt="other-icon">
+						</div>
+						<div class="service__image">
+							<div class="service__text">
+								<spam class="service__subtitle">Прочие услуги</spam>
+								<div class="service__desc">
+									<div class="service__title">
+										<span class="service__name">Стрижка усов</span>
+										<span class="service__name">Горячий воск</span>
+										<span class="service__name">Камуфляж головы</span>
+										<span class="service__name">Камуфляж бороды</span>
+										<span class="service__name">Укладка</span>
+									</div>
+									<div class="service__price">
+										<span class="price">600</span>
+										<span class="price">1200</span>
+										<span class="price">1000</span>
+										<span class="price">800</span>
+										<span class="price">700</span>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="service__button">Записаться на стрижку</a>
+							<div class="service__image">
+								<img src="img/services/other-img.jpg" alt="other">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section gallery" id="gallery">
+			<div class="container">
+				<h2 class="section-title gallery__title">Cледите за нами в instagram</h2>
+				<div class="gallery-block">
+					<div class="gallery__item">
+						<div class="gallery__image small">
+							<img src="img/gallery/img-1.jpg" alt="1">
+						</div>
+						<div class="gallery__image small">
+							<img src="img/gallery/img-2.jpg" alt="2">
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="gallery__image full">
+							<img src="img/gallery/img-3.jpg" alt="3">
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="gallery__image small">
+							<img src="img/gallery/img-4.jpg" alt="4">
+						</div>
+						<div class="gallery__image small">
+							<img src="img/gallery/img-5.jpg" alt="5">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section franchise" id="franchise">
+			<div class="container">
+				<h2 class="section-title franchise__title">Франшиза</h2>
+				<p class="franchise__desc">Качество услуг, отменный сервис и комфортная атмосфера барбершопа в классическом английском стиле — если Вам близка наша концепция и идеология, то мы с радостью поможем Вам открыть SPECIAL BARBERSHOP в любом городе России и Стран СНГ! Заявку на приобретение франшизы с кратким рассказом о Вас и указанием города, для которого Вы хотите приобрести франшизу, присылайте на электронный адрес sbspb@list.ru.</p>
+				<p class="franchise__desc white">Открой Special Barbershop в своем городе!</p>
+				<a href="#" class="btn franchise__btn">Написать сейчас</a>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="contact__inner">
+					<div class="contant-block">
+						<div class="contacts">
+							<h3 class="contacts__title">Как нас найти</h3>
+							<div class="contacts__list">
+								<div class="contacts__item">
+									<span class="contacts__subtitle">Мы находимся по адресу:</span>
+									<span class="contacts__desc">Санкт-Петербург, ул. Ждановская, 1/2</span>
+									<span class="contacts__desc">Санкт-Петербург, Московский пр., 159</span>
+								</div>
+								<div class="contacts__item">
+									<span class="contacts__subtitle">Мы работаем:</span>
+									<span class="contacts__desc">Ежедневно 10:00 - 21:00 </span>
+								</div>
+								<div class="contacts__item">
+									<span class="contacts__subtitle">Наши телефоны:</span>
+									<span class="contacts__desc">+7 905 230-22-21</span>
+									<span class="contacts__desc">+7 905 230-22-23</span>
+								</div>
+								<div class="contacts__item">
+									<span class="contacts__subtitle">Почта:</span>
+									<span class="contacts__desc">sbspb@list.ru</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="#" class="contact__form">
+						<h3 class="contacts__title">Написать нам</h3>
+						<input class="contact__input" placeholder="Ваше имя" required type="text">
+						<input class="contact__input" placeholder="Ваше email" required type="text">
+						<textarea class="contact__textarea" placeholder="Ваше сообщение" name="textarea" id="" cols="30" rows="7"></textarea>
+						<input class="contact__button" type="submit">
+					</form>
 				</div>
 			</div>
 		</section>
 	</main>
+	<footer class="section footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__logo">
+					<img src="img/footer/logo-footer.png" alt="footer-logo">
+				</div>
+				<div class="social">
+					<a href="#" class="social__link vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+					<a href="#" class="social__link instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#" class="social__link facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</div>
+				<div class="footer__text">
+					<span class="footer__link"><a href="#">политика конфиденциальности</a></span>
+					<span class="footer__link"><a href="#">пользовательское соглашение</a></span>
+				</div>
+				<div class="copy">&copy; 2015 – 2020 SPECIAL BARBERSHOP</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal" id="modal">
+		<div class="modal-content">
+			<button class="close">&times;</button>
+			<h4 class="modal-title">Заказать звонок</h4>
+			<form class="modal__form" action="#">
+				<input class="modal__input" type="text" placeholder="Ваше имя">
+				<input class="modal__input" type="tel" placeholder="Ваш телефон">
+				<input class="modal__btn" type="submit" value="Позвонить мне">
+			</form>
+		</div>
+	</div>
 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
